@@ -1,19 +1,23 @@
 
 
+#header {
+    background-color: #D9E1DD  ;
+    color: black;
+    font-style: comic sans;
+}
+h1 {font-family: "Comic Sans;"}
+
 body {background:#333333; text-align: center; color:#838080; font:1em/1.6 "Courier New"; margin:0 0 0 0;}
 
-  <
-
-h1, h3 {font-family:"Courier New";}
+h3 {font-family:"Courier New";}
 pre,code {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif}
 
 input[type=text] {
   width: 300px;
   height: 100px;
-  border: 1px dotted #999;
+  border: 2px solid #999;
   border-radius: 10;
   -webkit-appearance: none;
-}
-input.placeholder {
-    text-align: center;
+  background-color: #D1DBD6;
+   color: black;
 }
