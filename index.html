@@ -1,42 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
-</head>
-<style>
-body {
-    background-color: #36486b;
-}
-
-h1 {
-	color: #fefbd8;
-    text-align: center;
-    }
-
-h3 {
-	color: #fefbd8;
-    text-align: left;
-    }
-</style>
+  <title>Yik Yak Project</title>
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<div id="header"
+  <div id="NavBar"
+  <nav>
+    <ul>
+      <li><a href="#top">Go to top</a>
+    </ul>
+  </nav>
 
 <h1>Yik-Yak </h1>
-<h3> Type a message </h3>
+<h3> share your thoughts anonymously </h3>
+<div>
 
-<script type="text/JavaScript">
-        function showMessage(){
-            var message = document.getElementById("message").value;
-            display_message.innerHTML= message;
-        }
-    </script>
+<input type="text" id = "message" placeholder="leave a message">
+<br><input type="submit" onclick="showMessage()" value="submit" />
+<p> newsfeed <span id = "display_message"></span> </p>
+</div>
+
 </head>
-<body>
-Enter message: <input type="text" id = "message">
-<input type="submit" onclick="showMessage()" value="submit" />
-<p> Posts: <span id = "display_message"></span> </p>
-
-
-
 </body>
 </html>
