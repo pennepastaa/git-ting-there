@@ -12,14 +12,15 @@
         </div>
 </div>
 <p> Send anonymous messages </p>
-<input type="text" id = "message" placeholder="leave a message">
-<br><input type="submit" onclick="showMessage()" value="submit" />
 
-<div id="newsfeed_title">
-  <h3> Newsfeed </h3>
-</div>
+<form id="sendmsgs" action='#'>
+<input type="text" id = "message" placeholder="leave a message" autocomplete="off">
 
-<p id = "showmessage"></p>
+<br><input type="submit" onclick="showMessage()" value="submit"/>
+<form>
+
+<div id="box">
+<h3> Newsfeed </h3>
 </div>
 
 </head>
