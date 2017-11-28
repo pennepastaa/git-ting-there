@@ -2,27 +2,58 @@
 <html>
 <head>
   <title>Yik Yak Project</title>
-    <script type="text/javascript" src="app.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
+
 <body>
-    <div id="container">
-        <div id="header">
-            <h1>Yik-Yak </h1>
-        </div>
-</div>
-<p> Send anonymous messages </p>
+
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCfRM1XF1p2_TRN-DSWvjnorCMdpwhtgRA",
+      authDomain: "yyproject-f70c9.firebaseapp.com",
+      databaseURL: "https://yyproject-f70c9.firebaseio.com",
+      projectId: "yyproject-f70c9",
+      storageBucket: "yyproject-f70c9.appspot.com",
+      messagingSenderId: "770832679301"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+   <script type="text/javascript" src="app.js"></script>
+
+  </script>
+
+  <div id="header">
+      <h1>Yik-Yak </h1>
+    </div>
+
+  <div id=greeting>
+    <p>send your troubles to the dark recesses of the net </p>
+   </div>
 
 <form id="sendmsgs" action='#'>
-<input type="text" id = "message" placeholder="leave a message" autocomplete="off">
+<input type="text" id= "message" placeholder="type away" autocomplete="off">
 
-<br><input type="submit" onclick="showMessage()" value="submit"/>
-<form>
+<br>
+<input type="submit" onclick="showMessage()" value="send"/>
+</form>
+
+<div id=newsfeedheader>
+  <h3> Newsfeed </h3>
+</div>
+<div id=report>
+  <p><a id=reportlink href= "report.html">Report Issue</a></p>
+  </div>
+<br>
 
 <div id="box">
-<h3> Newsfeed </h3>
+
 </div>
 
 </head>
 </body>
+
 </html>

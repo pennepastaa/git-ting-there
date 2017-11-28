@@ -1,22 +1,23 @@
-
 #newsfeed_title{
-  background-color: #D9E1DD  ;
   color: black;
 }
-
 #header {
     background-color: #D9E1DD  ;
     color: black;
-    font-style: "comic sans";
+    font:1em/1.6 "Courier New"
 }
 h1 {font-family: "Comic Sans;"}
 
-body {background:#333333; text-align: center; color:#EFF4F1; font:1em/1.6 "Courier New"; margin:0 0 0 0;}
+body {background:#333333;
+  text-align: center;
+  color:#EFF4F1;
+  font:1em/1.6 "Courier New";
+  margin:0 0 0 0;}
 
 h3 {font-family:"Courier New";}
 pre,code {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif}
 
-input[type=text] {
+#message {
   width: 300px;
   height: 100px;
   border: 2px solid #999;
@@ -24,3 +25,93 @@ input[type=text] {
   -webkit-appearance: none;
   background-color: #E9F1EC;
    color: black;
+}
+input[type=submit]{
+    background-color: #70A986;
+    border: none;
+    color: white;
+    padding: 10px 36px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+}
+
+#report{
+  text-align: right
+}
+
+#newsfeedheader {
+  background-color: #D9E1DD  ;
+  color: black;
+}
+
+#reportlink{
+    background-color: #70A986;
+    color: white;
+    padding: 2px 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 8px;
+    display: inline-block;
+}
+#reportlink:hover, #reportlink:active {
+    background-color: #7BD9A0;
+}
+
+
+/* puts border around all of the box area...
+#box{
+  padding: 1em;
+ border: 1px solid #CCC;
+ border-radius: 1em;
+}
+*/
+
+
+/*   report page   */
+#reportheader {
+  background-color: #D9E1DD  ;
+  color: black;
+  font:1em/1.6 "Courier New"
+}
+#useful-links{
+  background-color: #D9E1DD  ;
+  color: black;
+  font:1em/1.6 "Courier New"
+}
+
+#yymsg{
+  padding: 1em;
+ border: 1px solid #CCC;
+ border-radius: 1em;
+}
+
+#reportform{
+  margin: 0 auto;
+  width: 400px;
+}
+label {
+  /* To make sure that all labels have the same size and are properly aligned */
+  display: inline-block;
+  width: 100px;
+  text-align: centre;
+}
+a:link, a:visited {
+    color: white;
+}
+a:hover, a:active {
+    color: #7BD9A0;
+}
+
+#return{
+      background-color: #70A986;
+      color: white;
+      padding: 2px 5px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 8px;
+      display: inline-block;
+  }
+  #return:hover, #return:active {
+      background-color: #7BD9A0
+}

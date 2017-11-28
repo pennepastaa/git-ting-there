@@ -12,7 +12,11 @@ function showMessage(){
     //box.innerHTML = (`${msg}`);
     document.getElementById('sendmsgs').reset();
     //document.getElementById('elementId').value='';
+
+    var firebaseRef = firebase.database().ref();
+
+    firebaseRef.child("Text").set("some value")
 }
+    //console.log(`${message}`);
 
-
-         //console.log(`${message}`);
+ //window.alert("Congrats!!!!! you are our 100th visitor. Click here to win an iPhone X");
